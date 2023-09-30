@@ -15,6 +15,9 @@ services:
             - /var/www/html/vendor  # protect this location inside container (don't overwrite it)
             - ./:/var/www/html
             - ./.docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini:ro # ro = read only
+        environment:
+            # See https://xdebug.org/docs/all_settings#mode
+            XDEBUG_MODE: "${XDEBUG_MODE:-develop}"
         extra_hosts:
             # Ensure that host.docker.internal is correctly defined on Linux
             - host.docker.internal:host-gateway

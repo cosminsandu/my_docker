@@ -25,6 +25,12 @@ docker compose ps   # List services
 docker exec -it [CONTAINER] [COMMAND]
 docker exec -it my_docker-web-1 bash
 docker exec -it my_docker-web-1 sh
+
+# set env variable
+# linux
+#XDEBUG_MODE=off docker compose up
+# windows 
+set XDEBUG_MODE=off&& docker compose up &set XDEBUG_MODE=
 ```
 
 

@@ -36,9 +36,9 @@ COPY . .
 # run composer dump-autoload --optimize
 RUN composer dump-autoload --optimize
 
-# Xdebug has different modes / functionalities.
+# Xdebug has different modes / functionalities. See https://xdebug.org/docs/all_settings#mode
 # We can default to 'off' and set to 'debug' when we run docker compose up if we need it
-ENV XDEBUG_MODE=off
+ENV XDEBUG_MODE=develop
 
 # Copy xdebug config file into container
 COPY ./.docker/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
