@@ -20,7 +20,7 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 COPY ./composer.* ./
 
 # run "composer install"
-RUN composer install --prefer-dist --no-dev --no-scripts --no-progress --no-interaction
+RUN composer install --no-progress --no-interaction
 
 # copy application files to the working directory (/var/www/html)
 COPY . .
