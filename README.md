@@ -4,7 +4,8 @@ This is my Docker for basic DEVELOPMENT!
 
 For plain PHP (without Symfony framework) use the `php` branch.
 
-
+For Symfony framework use `main` branch and install symfony in current directory.
+`composer create-project symfony/skeleton .`
 
 Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
