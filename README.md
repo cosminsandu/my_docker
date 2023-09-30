@@ -10,6 +10,7 @@ Requirement:
  - app (PHP 8.1 & composer)
  - database (mysql 8.0)
  - cache (redis) -  OPTIONAL - commented
+ - debug (xdebug)
 
 ## Commands
 ```bash

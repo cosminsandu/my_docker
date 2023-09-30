@@ -13,7 +13,11 @@ services:
             dockerfile: Dockerfile
         volumes:
             - /var/www/html/vendor  # protect this location inside container (don't overwrite it)
-            -  ./:/var/www/html
+            - ./:/var/www/html
+            - ./.docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini:ro # ro = read only
+        extra_hosts:
+            # Ensure that host.docker.internal is correctly defined on Linux
+            - host.docker.internal:host-gateway
     # mysql
     db:
         image: mysql:8.0
