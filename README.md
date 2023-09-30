@@ -1,5 +1,7 @@
 # my_docker
 
+This is my Docker for basic DEVELOPMENT!
+
 Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
 
@@ -7,6 +9,7 @@ Requirement:
  - web server (nginx) [localhost](http://localhost/)
  - app (PHP 8.1 & composer)
  - database (mysql 8.0)
+ - cache (redis) -  OPTIONAL - commented
 
 ## Commands
 ```bash
@@ -22,3 +25,5 @@ docker exec -it [CONTAINER] [COMMAND]
 docker exec -it my_docker-web-1 bash
 docker exec -it my_docker-web-1 sh
 ```
+
+
