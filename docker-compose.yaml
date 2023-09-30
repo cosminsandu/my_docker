@@ -1,0 +1,7 @@
+# docker-compose.yaml define and configure the "network of services"
+services:
+    # web server: nginx
+    web:
+        image: nginx:latest
+        ports:
+            - "80:80" # first is the local machine, second is port from container
