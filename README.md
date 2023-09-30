@@ -7,7 +7,7 @@ Requirement:
 
 ## Services
  - web server (nginx) [localhost](http://localhost/)
- - app (PHP 8.1 & composer)
+ - app (PHP 8.1 & composer & symfony CLI)
  - database (mysql 8.0)
  - cache (redis) -  OPTIONAL - commented
  - debug (xdebug) - requires [this chrome extension](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc)
