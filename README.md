@@ -4,7 +4,9 @@ Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
 
 ## Services
- - web server (nginx)
+ - web server (nginx) [localhost](http://localhost/)
+ - app (PHP 8.1)
+ - database (mysql 8.0)
 
 ## Commands
 ```bash
