@@ -2,6 +2,10 @@
 
 This is my Docker for basic DEVELOPMENT!
 
+For plain PHP (without Symfony framework) use the `php` branch.
+
+
+
 Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
 
@@ -23,8 +27,8 @@ docker ps           # List containers
 docker compose ps   # List services
 
 docker exec -it [CONTAINER] [COMMAND]
-docker exec -it my_docker-web-1 bash
-docker exec -it my_docker-web-1 sh
+docker exec -it my_docker-app-1 sh
+docker exec -it my_docker-app-1 bash
 
 # set env variable
 # linux
