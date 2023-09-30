@@ -5,13 +5,14 @@ Requirement:
 
 ## Services
  - web server (nginx) [localhost](http://localhost/)
- - app (PHP 8.1)
+ - app (PHP 8.1 & composer)
  - database (mysql 8.0)
 
 ## Commands
 ```bash
 docker compose up     # compose/create the container(s)
 docker compose up -d  # compose/create the container(s) in detatch mode
+docker compose up --build -d  # build images
 
 
 docker ps           # List containers

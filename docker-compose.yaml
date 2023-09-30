@@ -12,7 +12,8 @@ services:
         build:
             dockerfile: Dockerfile
         volumes:
-            -  ./:/app
+            - /var/www/html/vendor  # protect this location inside container (don't overwrite it)
+            -  ./:/var/www/html
     # mysql
     db:
         image: mysql:8.0
@@ -26,6 +27,5 @@ services:
             MYSQL_USER: user
             MYSQL_PASSWORD: secret
             MYSQL_DATABASE: docker-php
-
 volumes:
     mysqldata:
