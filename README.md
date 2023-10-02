@@ -4,8 +4,8 @@ This is my Docker for basic DEVELOPMENT!
 
 For plain PHP (without Symfony framework) use the `php` branch.
 
-For Symfony framework use `main` branch and install symfony in current directory.
-`composer create-project symfony/skeleton .`
+For Symfony framework use `main` branch. <br>
+To install symfony, access the `app` container and run `sh .docker/install-symfony.sh`
 
 Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
@@ -22,7 +22,7 @@ Requirement:
 docker compose up     # compose/create the container(s)
 docker compose up -d  # compose/create the container(s) in detatch mode
 docker compose up --build -d  # build images
-
+docker compose down   # Stop and remove containers, networks
 
 docker ps           # List containers
 docker compose ps   # List services

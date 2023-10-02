@@ -1,4 +1,4 @@
-# docker-compose.yaml define and configure the "network of services"
+# docker-compose.yaml define and configure the "network of services" (containers)
 services:
     # web server: nginx
     web:
@@ -12,7 +12,7 @@ services:
         build:
             dockerfile: Dockerfile
         volumes:
-            - /var/www/html/vendor  # protect this location inside container (don't overwrite it)
+#            - /var/www/html/vendor  # protect this location inside container (don't overwrite it)
             - ./:/var/www/html
             - ./.docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini:ro # ro = read only
         environment:
