@@ -1,8 +1,8 @@
 #!/bin/sh
-set -e
+set -e # When this option is on returns an exit status value >0
 
 rm -Rf tmp/
-composer create-project "symfony/skeleton" tmp --prefer-dist --no-progress --no-interaction --no-install
+composer create-project "symfony/skeleton $1" tmp --prefer-dist --no-progress --no-interaction --no-install
 
 cd tmp
 cp -Rp . ..

@@ -5,7 +5,7 @@ This is my Docker for basic DEVELOPMENT!
 For plain PHP (without Symfony framework) use the `php` branch.
 
 For Symfony framework use `main` branch. <br>
-To install symfony, access the `app` container and run `sh .docker/install-symfony.sh`
+To install symfony, access the `app` container and run `sh .docker/install-symfony.sh [version]` (version is optional, if not specified last stable version is installed)
 
 Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
