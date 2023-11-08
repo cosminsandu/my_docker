@@ -15,6 +15,7 @@ Requirement:
  - app (PHP 8.1 & composer & symfony CLI)
  - database (mysql 8.0)
  - cache (redis) -  OPTIONAL - commented
+ - rabbitmq - commented
  - debug (xdebug) - requires [this chrome extension](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc)
 
 ## Commands

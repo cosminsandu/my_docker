@@ -38,5 +38,15 @@ services:
     # redis
 #    cache:
 #        image: redis:latest
+#    rabbitmq:
+#        image: 'rabbitmq:3.12-management-alpine'
+#        container_name: rabbitmq
+#        ports:
+#            - '5672:5672'# The standard AMQP protocol port
+#            - '15672:15672'# HTTP management UI
+#        volumes:
+#            - "rabbitmq_data:/var/lib/rabbitmq"
+#        restart: unless-stopped
 volumes:
     mysqldata:
+#    rabbitmq_data:
