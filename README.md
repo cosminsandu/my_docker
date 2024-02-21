@@ -2,6 +2,8 @@
 
 This is my Docker for basic DEVELOPMENT!
 
+Create a new project by clicking '`Use this template`' button.
+
 For plain PHP (without Symfony framework) use the `php` branch.
 
 For Symfony framework use `main` branch. <br>
