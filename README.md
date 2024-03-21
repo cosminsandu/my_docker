@@ -7,7 +7,12 @@ Create a new project by clicking '`Use this template`' button.
 For plain PHP (without Symfony framework) use the `php` branch.
 
 For Symfony framework use `main` branch. <br>
-To install symfony, access the `app` container and run `sh .docker/install-symfony.sh [version]` (version is optional, if not specified last stable version is installed)
+
+```bash
+make up
+make ssh
+sh .docker/install-symfony.sh "6.4.*" 
+```
 
 Requirement:
 - [Docker](https://docs.docker.com/get-docker/)
