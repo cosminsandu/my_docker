@@ -22,7 +22,7 @@ ssh:
 ssh-root:
 	docker compose exec app bash
 mysql:
-	docker compose exec mysql mariadb -uroot -potDtyEfdSRGkUIG
+	docker compose exec db mysql -uroot -psecret
 update-branch:
 	git fetch -a
 	git checkout $(branch)

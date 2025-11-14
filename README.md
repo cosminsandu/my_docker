@@ -19,7 +19,7 @@ Requirement:
 
 ## Services
  - web server (nginx) [localhost](http://localhost/)
- - app (PHP 8.1 & composer & symfony CLI)
+ - app (PHP 8.2 & composer & symfony CLI)
  - database (mysql 8.0)
  - cache (redis) -  OPTIONAL - commented
  - rabbitmq - commented
